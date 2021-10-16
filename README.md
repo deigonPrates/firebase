@@ -24,6 +24,8 @@ $firebase->sendCloudMessage($device_token, $title, $message);
 require __DIR__ . '/vendor/autoload.php';
 use Deigon\SDK\Firebase;
 
+$fcm ='zNJqWVtVhWqaDwJc0uWofYYt5brlx5M86-AQnQ7KJWBqb7wQLk1iYmpA8ZirylKDL';
+
 $devices_token = [
 'Y4b2dXWWA-OJqke9wLQNmHrPAQnQ7KJWBqb7wQLk1iYmpA8ZirylKDL_PBOJKmajpHZrVsUdsSrgoCcJOs971x6F7v6gAlJ3yiGJ9tU7FD5dnsep_oBVzLu',
 'OJqke9wLQNmHrPAQY4b2dXWWA-nQ7KJWBqb7wQLk1iYmpA8ZirylKDL_PBOJKmajpF7v6gAlJ3yiGJ9tU7FD5dnsep_oBVzLHZrVsUdsSrgoCcJOs971x6u',
