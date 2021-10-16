@@ -1,0 +1,17 @@
+{
+    "name": "deigon/firebase",
+    "description": "Firebase SDK PHP",
+    "autoload": {
+        "psr-4": {
+            "Deigon\\SDK\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Deigon Prates",
+            "email": "deigonprates@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
