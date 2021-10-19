@@ -4,6 +4,11 @@ Simple script for firebase integration
 
 ## Requirements
 - [FCM_TOKEN] Console Firebase > Project > Config Project > Cloud Messaging > Server key.
+## Install
+```php
+composer require deigon/firebase
+```
+
 
 ## Send Cloud Message
 ```php
