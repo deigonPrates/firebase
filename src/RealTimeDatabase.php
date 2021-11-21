@@ -12,14 +12,16 @@ class RealTimeDatabase
     private $table = '';
     private $database;
     private $reference = [];
+    private $configFile;
 
     /**
      * RealTimeDatabase constructor.
      * @param $uri
      */
-    public function __construct($uri)
+    public function __construct($uri, $configFile)
     {
         $this->uri = $uri;
+        $this->configFile = $configFile;
     }
 
     /**
@@ -42,7 +44,9 @@ class RealTimeDatabase
      */
     public function init(): RealTimeDatabase
     {
-        $this->database = (new Factory())->withDatabaseUri($this->uri)->createDatabase();
+        $this->database = (new Factory())
+            ->withServiceAccount($this->configFile)
+            ->withDatabaseUri($this->uri)->createDatabase();
         return $this;
     }
 
