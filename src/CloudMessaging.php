@@ -24,7 +24,7 @@ class CloudMessaging{
      * @param String $body
      * @return bool|string
      */
-    public function sendCloudMessage(String $fireToken, String $title, String $body){
+    public function send(String $fireToken, String $title, String $body){
         $data = [
             "to" => $fireToken,
             "notification" => [
@@ -45,7 +45,7 @@ class CloudMessaging{
      * @param String $body
      * @return bool|string
      */
-    public function sendMultipleCloudMessage(Array $fireTokens, String $title, String $body){
+    public function sendMultiple(Array $fireTokens, String $title, String $body){
         $data = [
             "registration_ids" => $fireTokens,
             "notification" => [
