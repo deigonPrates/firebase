@@ -2,7 +2,7 @@
 
 namespace Deigon\SDK;
 
-class Firebase{
+class CloudMessaging{
 
     protected $color;
     private $fcm_key;
