@@ -9,7 +9,6 @@ class RealTimeDatabase
 {
 
     private $uri = '';
-    private $table = '';
     private $database;
     private $reference = [];
     private $configFile;
@@ -22,21 +21,6 @@ class RealTimeDatabase
     {
         $this->uri = $uri;
         $this->configFile = $configFile;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTable(): string
-    {
-        return $this->table;
-    }
-
-    /**
-     * @param String $table
-     */
-    public function setTable(String $table){
-        $this->table = $table;
     }
 
     /**
